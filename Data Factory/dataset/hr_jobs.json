@@ -1,0 +1,41 @@
+{
+	"name": "hr_jobs",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Datasets/HR Project"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "job_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "job_title",
+				"type": "varchar"
+			},
+			{
+				"name": "min_salary",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 2
+			},
+			{
+				"name": "max_salary",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "jobs"
+		}
+	}
+}
