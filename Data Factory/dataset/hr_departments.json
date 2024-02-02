@@ -1,0 +1,34 @@
+{
+	"name": "hr_departments",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Datasets/HR Project"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "department_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "department_name",
+				"type": "varchar"
+			},
+			{
+				"name": "location_id",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "departments"
+		}
+	}
+}
