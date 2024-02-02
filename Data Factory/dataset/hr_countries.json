@@ -1,0 +1,33 @@
+{
+	"name": "hr_countries",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Datasets/HR Project"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "country_id",
+				"type": "char"
+			},
+			{
+				"name": "country_name",
+				"type": "varchar"
+			},
+			{
+				"name": "region_id",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "countries"
+		}
+	}
+}
