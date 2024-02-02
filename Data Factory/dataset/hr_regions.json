@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference"
 		},
 		"folder": {
-			"name": "Datasets/HR Project"
+			"name": "Datasets_HR_Projects/HR Project"
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
